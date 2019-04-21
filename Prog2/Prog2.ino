@@ -22,9 +22,9 @@ int tempo = 300;
 //int beats[]={3, 2, 2, 1, 3, 2, 2, 1, 2, 1, 2, 2, 1, 3, 1, 2, 1, 1, 1, 1, 3, 1};
 
 //Melody 3
-int length = 31;
-char notes[] = "agggaDEFEDCDEDCbagggaDEFEFGFGAA";
-int beats[] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
+int length = 37;
+char notes[] = "aggga DEF EDC DED Cb aggga DEF EFG FGA";
+int beats[] = {3, 2, 1, 1, 4, 1, 1, 1, 2, 1, 1, 2, 1, 1, 3, 1, 2, 3, 2, 1, 1, 4, 1, 1, 2, 1, 1, 2, 1, 1, 6};
 
 //****** Setup ****************************************************************
 void setup() {
@@ -56,10 +56,10 @@ void playTone(int tone, int duration) {
 
 void playNote(char note, int duration) {
   char names[] = { 'c', 'd', 'e', 'f', 'g', 'a', 'b', 'C' , 'D', 'E', 'F', 'G', 'A'};
-  int tones[] = { 1915, 1700, 1519, 1432, 1275, 1136, 1014, 956, 840, 812, 756, 708, 678};
+  int tones[] = { 1915, 1700, 1519, 1432, 1275, 1136, 1014, 956, 840, 760, 716, 637, 568};
 
   // play the tone corresponding to the note name
-  for (int i = 0; i < 9; i++) {
+  for (int i = 0; i < 13; i++) {
     if (names[i] == note) {
       playTone(tones[i], duration);
     }
