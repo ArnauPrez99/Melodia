@@ -23,8 +23,8 @@ int tempo = 300;
 
 //Melody 3
 int length = 37;
-char notes[] = "aggga DEF EDC DED Cb aggga DEF EFG FGA";
-int beats[] = {3, 2, 1, 1, 4, 1, 1, 1, 2, 1, 1, 2, 1, 1, 3, 1, 2, 3, 2, 1, 1, 4, 1, 1, 2, 1, 1, 2, 1, 1, 6};
+char notes[] = "aggga DEFEDCDEDCbaggga DEFEFGFGA";
+int beats[] = {3, 2, 1, 1, 4, 1, 1, 1, 2, 1, 1, 2, 1, 1, 3, 2, 1, 3, 2, 1, 1, 4, 1, 1, 1, 2, 1, 1, 2, 1, 1, 6};
 
 //****** Setup ****************************************************************
 void setup() {
